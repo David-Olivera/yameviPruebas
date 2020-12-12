@@ -1,0 +1,225 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Primer menu */
+.menu_1{
+    background-color: transparent;
+    display: block;
+    height: 70px;
+    z-index: 90;
+    position: relative;
+    width: auto;
+}
+.container1{
+    padding-top: 7px;
+    padding-bottom: 6px;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon{
+    float: left;
+}
+.drop_menu{
+    float: right;
+}
+/*Segundo menu*/
+.menu_2{
+    background-color: #bedcf2;
+    height: 80px;
+    width: auto;
+    padding-top: 17px;
+    border-top: 1px solid #ffffff;
+    position: sticky;
+    z-index: 90;
+    top: 0;
+    font-size: 14px;
+    line-height: 26px;
+}
+.container2{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon2{
+    float: left;
+}
+.menu_2 nav {
+    float: right;
+    width:90%;
+	max-width:1000px;
+	background:transparent;
+}
+.menu_bar {
+	display:none;
+}
+.menu_2 nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+.menu_2 nav ul li {
+    float: right;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.menu_2 nav ul li a {
+    padding-top: 5px;
+    color:#64657e;
+	display:block;
+	text-decoration:none;
+}
+.menu_2 nav ul li span {
+	margin-right:10px;
+}
+#button{
+    color: #ffffff;
+    padding: 9px 15px;
+    margin-top: 0;
+    margin-left: 8px;
+    border-radius: 20px;
+    background-color: #00d68c;
+}
+section {
+	padding:20px;
+}
+/* Espacio de fondo de color */
+.background-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 700px;
+    width: auto ;
+    display: flex;
+    flex-direction: column;
+    background-color: #bedcf2;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    background-image: url(https://assets.website-files.com/5db165cbf782f992df567ae5/5efee520c083b7d15d9be515_recrtangle_bg.svg);
+    background-position: 50% 100%, 0 0;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+/*  pequeño texto y formulario */
+.content-info{
+    height: 450px;
+    z-index: 80;
+    width: auto;
+    position: relative;
+    text-align: center;
+}
+.container3{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #64657e;
+}
+.container3 > p{
+    margin-left:200px;
+    margin-right:200px;
+}
+.content-form{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    max-width: 450px;
+    min-width: 450px;
+    min-height: 54px;
+    background-color: #fff;
+    padding: 4px 5px 4px 16px;
+    border-radius: 16px;    
+    border-color: #efefef;
+    display: flex;
+    flex-direction: row;
+}
+.content-input{
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+}
+.input-email{
+    max-height: 256px;
+    border: 0;
+    width: 60%;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+}
+.input-submit{
+    min-height: 40px;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 14px;
+    border: 0;
+    padding: 9px 15px;
+    background-color: #00d68c;
+}
+
+
+/* Responsivo */
+
+@media screen and (max-width:800px ) {
+    .menu_1{
+        display: none;
+    }
+    .menu_2{
+        border-top: 0;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-left: 20px;
+    }
+	.menu_2 nav {
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+        position: fixed;
+	}
+ 
+	.menu_2 nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+ 
+	.menu_bar {
+        display:block;
+        float: right;
+        width:20%;
+        padding-right: 20px;
+	}
+ 
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:transparent;
+		color:#000;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:15px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+    }  
+    .background-header{
+        height: 1000px;
+    }
+    .container3 > p{
+        margin-left:10px;
+        font-size: 20px;
+        margin-right:10px;
+    }
+    .input-email{
+        display: none;
+    }
+    .content-form{
+        max-width: 200px;
+        min-width: 150px;
+        background-color: transparent;
+    }
+}
